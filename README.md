@@ -168,7 +168,7 @@ I used VMware Workstation 17 Player with the Kali Linux virtual machine listed i
 In the Virtual Network Editor, I configured **VMnet2** as a NAT network with subnet `10.0.0.0`, mask `255.255.255.0`, NAT gateway `10.0.0.1`, and DHCP enabled.
 
 <p align="center">
-  <img src="images/02-vmware-network-settings.png" alt="VMware Virtual Network Editor showing VMnet2 NAT configuration" width="800"><br>
+  <img src="vmware-network-settings.png" alt="VMware Virtual Network Editor showing VMnet2 NAT configuration" width="800"><br>
   <em>Figure 2 – VMware Virtual Network Editor with the VMnet2 NAT configuration.</em>
 </p>
 
@@ -177,7 +177,7 @@ In the Virtual Network Editor, I configured **VMnet2** as a NAT network with sub
 I set the Kali Linux VM's network adapter to the **Custom** virtual network (*Network Walks (NAT)*), so the VM uses VMnet2 instead of the default network.
 
 <p align="center">
-  <img src="images/03-kali-vm-adapter-settings.png" alt="Kali Linux virtual machine network adapter configuration" width="800"><br>
+  <img src="kali-vm-adapter-settings.png" alt="Kali Linux virtual machine network adapter configuration" width="800"><br>
   <em>Figure 3 – Kali Linux VM network adapter set to the custom virtual network.</em>
 </p>
 
@@ -186,7 +186,7 @@ I set the Kali Linux VM's network adapter to the **Custom** virtual network (*Ne
 Inside Kali Linux, I reviewed the IPv4 settings for `eth0`: Automatic (DHCP) method with the static address `10.0.0.2/24`, gateway `10.0.0.1` and DNS `8.8.8.8`.
 
 <p align="center">
-  <img src="images/04-kali-network-configuration.png" alt="Kali Linux IPv4 network configuration" width="800"><br>
+  <img src="kali-network-configuration.png" alt="Kali Linux IPv4 network configuration" width="800"><br>
   <em>Figure 4 – Kali Linux IPv4 configuration (Automatic DHCP with an additional static address).</em>
 </p>
 
@@ -195,7 +195,7 @@ Inside Kali Linux, I reviewed the IPv4 settings for `eth0`: Automatic (DHCP) met
 I confirmed the addresses with `ip addr` and `ifconfig`, then tested connectivity and DNS resolution with `ping`. See [Lab Verification](#-lab-verification).
 
 <p align="center">
-  <img src="images/05-kali-connectivity-test.png" alt="Kali Linux IP configuration and ping verification" width="800"><br>
+  <img src="kali-connectivity-test.png" alt="Kali Linux IP configuration and ping verification" width="800"><br>
   <em>Figure 5 – IP configuration and successful ping test from Kali Linux.</em>
 </p>
 
